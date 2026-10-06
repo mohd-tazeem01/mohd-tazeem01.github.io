@@ -1,1 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohd Tazeem | Digital Marketing Executive</title>
+
+<meta name="description" content="Mohd Tazeem is a Digital Marketing Executive specializing in SEO, website development, e-commerce, content strategy and digital marketing.">
+
+<meta name="keywords" content="Mohd Tazeem, Digital Marketing Executive, SEO, Website Development, E-commerce, Content Marketing">
+
+<meta name="author" content="Mohd Tazeem">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080b12;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --bg: #080b12;
+    --bg-light: #0e131d;
+    --card: #111722;
+    --card-hover: #151d2b;
+    --text: #ffffff;
+    --muted: #9da7b7;
+    --accent: #ff6b35;
+    --accent-light: #ff875b;
+    --border: rgba(255,255,255,0.09);
+    --max-width: 1180px;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container {
+    width: min(92%, var(--max-width));
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.section-label {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 700px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(8,11,18,0.88);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #cbd2dd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-button {
+    padding: 10px 18px;
+    border: 1px solid var(--accent);
+    border-radius: 30px;
+    color: var(--accent);
+}
+
+.menu-button {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255,107,53,0.12);
+    filter: blur(120px);
+    border-radius: 50%;
+    top: 10%;
+    right: -100px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-small {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(52px, 9vw, 105px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero-text {
+    max-width: 700px;
+    color: var(--muted);
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid var(--border);
+    color: #fff;
+}
+
+.btn-outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-light);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stat {
+    padding: 35px 20px;
+    border-right: 1px solid var(--border);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.stat-text {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-box {
+    background: linear-gradient(145deg, #111722, #0b0f17);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-box::before {
+    content: "MT";
+    font-size: 150px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.035);
+}
+
+.about-content p {
+    color: var(--muted);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.35s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    background: var(--card-hover);
+    border-color: rgba(255,107,53,0.35);
+}
+
+.service-number {
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    background: #0a0e16;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.35s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,107,53,0.4);
+}
+
+.project-image {
+    height: 240px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,107,53,0.35), transparent 35%),
+        linear-gradient(135deg, #182131, #0c111a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image span {
+    font-size: 52px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.9);
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-category {
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.project-content h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    color: var(--accent-light);
+}
+
+
+/* =========================
+   SEO SECTION
+========================= */
+
+.seo-section {
+    background: var(--accent);
+    color: #111;
+}
+
+.seo-section .section-label {
+    color: #111;
+}
+
+.seo-section .section-description {
+    color: rgba(0,0,0,0.7);
+}
+
+.seo-process {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 45px;
+}
+
+.seo-step {
+    background: rgba(255,255,255,0.18);
+    padding: 22px 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   TOOLS
+========================= */
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.tool {
+    padding: 13px 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: #dce2eb;
+    font-size: 14px;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.timeline {
+    margin-top: 50px;
+    border-left: 1px solid var(--border);
+    padding-left: 35px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--accent);
+    left: -41px;
+    top: 8px;
+}
+
+.timeline-date {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.timeline-item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    color: var(--muted);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+    background: linear-gradient(135deg, #101722, #080b12);
+    border-top: 1px solid var(--border);
+}
+
+.cta .section-description {
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.socials {
+    display: flex;
+    gap: 18px;
+}
+
+.socials a {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.socials a:hover {
+    color: var(--accent);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: #080b12;
+        flex-direction: column;
+        padding: 25px;
+        display: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seo-process {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 25px 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seo-process {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        height: 190px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+Mohd<span>.</span>
+</a>
+
+<div class="menu-button" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#about">About</a></li>
+<li><a href="#services">Expertise</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<a href="#contact" class="nav-button">
+Let's Talk
+</a>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div class="hero-small">
+Digital Marketing Executive
+</div>
+
+<h1>
+I build <span>digital</span><br>
+experiences that grow.
+</h1>
+
+<p class="hero-text">
+I work across SEO, website development, e-commerce, content strategy and digital marketing to help businesses build stronger and more visible digital experiences.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn btn-primary">
+View My Work
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Let's Connect
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<div class="stat-number">12+</div>
+<div class="stat-text">Digital Projects</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">5K+</div>
+<div class="stat-text">Products Migrated</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">SEO</div>
+<div class="stat-text">On-Page & Off-Page</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">360°</div>
+<div class="stat-text">Digital Approach</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container about-grid">
+
+<div class="about-box"></div>
+
+<div class="about-content">
+
+<div class="section-label">
+About Me
+</div>
+
+<h2 class="section-title">
+Strategy meets creativity.
+</h2>
+
+<p>
+I am Mohd Tazeem, a Digital Marketing Executive with an MBA in Finance and International Business and hands-on experience across SEO, content marketing, website development and e-commerce.
+</p>
+
+<p>
+My work goes beyond individual marketing tasks. I work across the complete digital process — from research and strategy to content creation, website development, SEO implementation and ongoing optimization.
+</p>
+
+<p>
+I have worked on projects across travel, hospitality, education, healthcare, food, NGOs, lifestyle and e-commerce, giving me practical exposure to different industries and digital requirements.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-label">
+What I Do
+</div>
+
+<h2 class="section-title">
+Digital skills built around<br>
+real projects.
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-number">01</div>
+<h3>SEO & Digital Strategy</h3>
+<p>
+Keyword research, search intent, on-page SEO, off-page SEO, content strategy, local SEO and website optimization.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-number">02</div>
+<h3>Website Development</h3>
+<p>
+Business websites, landing pages and website customization using WordPress, Elementor, Shopify and WooCommerce.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-number">03</div>
+<h3>E-commerce</h3>
+<p>
+E-commerce websites, product management, category structures, product optimization and large-scale product migration.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-number">04</div>
+<h3>Content Marketing</h3>
+<p>
+SEO articles, website content, pillar pages, cluster content, landing pages and search-intent-focused content.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-number">05</div>
+<h3>Website Optimization</h3>
+<p>
+UX improvements, navigation, responsive layouts, page structures, technical improvements and conversion-focused sections.
+</p>
+</div>
+
+<div class="service-card">
+<div class="service-number">06</div>
+<h3>Digital Creative</h3>
+<p>
+Digital graphics, promotional creatives, social media assets and visual content for websites and campaigns.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+<div class="container">
+
+<div class="section-label">
+Selected Work
+</div>
+
+<h2 class="section-title">
+Projects I've worked on.
+</h2>
+
+<p class="section-description">
+A selection of websites, SEO campaigns, e-commerce platforms and digital projects developed, optimized or managed by me.
+</p>
+
+
+<div class="projects-grid">
+
+
+<!-- GPX -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>GPX</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+E-commerce • Shopify • Migration
+</div>
+
+<h3>GPX Camera Store</h3>
+
+<p>
+Worked on the e-commerce website and transferred 5,000+ products from WooCommerce while handling product structure, optimization, navigation and website improvements.
+</p>
+
+<a class="project-link"
+href="https://gpxcamerastore.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- LE PASSAGE -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>LPI</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Travel • Website • SEO
+</div>
+
+<h3>Le Passage to India</h3>
+
+<p>
+Worked on website development, SEO optimization, page structure, travel experiences and frontend improvements for a destination management company.
+</p>
+
+<a class="project-link"
+href="https://lepassagetoindia.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- TALABGAON -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>TC</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Hospitality • SEO • Content
+</div>
+
+<h3>Talabgaon Castle</h3>
+
+<p>
+Created and managed SEO-focused website content covering heritage experiences, accommodation, Rajasthan travel, weddings, food and destinations.
+</p>
+
+<a class="project-link"
+href="https://www.talabgaoncastle.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- VIDYA -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>VQ</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Education • Website • SEO
+</div>
+
+<h3>Vidya Quest</h3>
+
+<p>
+Created website content and worked on website development, SEO optimization, landing pages and digital content for an education and technology-focused brand.
+</p>
+
+<a class="project-link"
+href="https://vidyaquest.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- BOSTON -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>BPW</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+SEO • Content • Local SEO
+</div>
+
+<h3>Boston Pizza & Wings</h3>
+
+<p>
+Developed a complete SEO and content strategy covering on-page and off-page SEO, keyword research, content planning and search visibility.
+</p>
+
+<a class="project-link"
+href="https://bostonpizzaandwings.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- PHYSIO -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>UM</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Healthcare • Website
+</div>
+
+<h3>Dr. Mohd Umar Mukhtar Physiotherapy</h3>
+
+<p>
+Created a professional physiotherapy website with service-focused content, responsive design, clear navigation and conversion-focused sections.
+</p>
+
+<a class="project-link"
+href="https://drumarmukhtar.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- HOUSE OF MUSK -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>HM</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+E-commerce • Website
+</div>
+
+<h3>House of Musk</h3>
+
+<p>
+Worked on e-commerce website development, product presentation, website structure and overall optimization.
+</p>
+
+<a class="project-link"
+href="https://houseofmusk.in/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- CLADD -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>CL</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Website • Digital Marketing
+</div>
+
+<h3>CLADD</h3>
+
+<p>
+Worked on website development and optimization along with additional digital marketing and Meta-related work.
+</p>
+
+<a class="project-link"
+href="https://cladd.in/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- NEXTBLOGGERS -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>NB</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+SEO • Content Writing
+</div>
+
+<h3>NextBloggers</h3>
+
+<p>
+Created SEO-focused long-form articles covering digital marketing, SEO, AI, websites, email marketing and related technology topics.
+</p>
+
+<a class="project-link"
+href="https://nextbloggers.com/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- NIROHITAA -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>NF</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+NGO • Website Development
+</div>
+
+<h3>Nirohitaa Foundation</h3>
+
+<p>
+Created an NGO website with a professional structure, content sections, donation-focused elements, CTAs and responsive design.
+</p>
+
+<a class="project-link"
+href="https://nirohitaafoundation.org/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- DIGITAL STANDEE -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>DS</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+E-commerce • SEO
+</div>
+
+<h3>Digital Standee</h3>
+
+<p>
+Created and optimized digital standee e-commerce websites with product structures, category organization, SEO and conversion-focused layouts.
+</p>
+
+<a class="project-link"
+href="https://signageone.in/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+<!-- NGBV -->
+
+<div class="project-card">
+
+<div class="project-image">
+<span>NGBV</span>
+</div>
+
+<div class="project-content">
+
+<div class="project-category">
+Creative • Graphics
+</div>
+
+<h3>NGBV University</h3>
+
+<p>
+Created multiple digital graphics and promotional creatives for university communication, campaigns and digital platforms.
+</p>
+
+<a class="project-link"
+href="https://ngbv.ac.in/"
+target="_blank">
+Visit Website →
+</a>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SEO
+========================= -->
+
+<section class="seo-section" id="seo">
+
+<div class="container">
+
+<div class="section-label">
+SEO Approach
+</div>
+
+<h2 class="section-title">
+From research to<br>
+search visibility.
+</h2>
+
+<p class="section-description">
+I work across both on-page and off-page SEO, building strategies around search intent, content structure, technical optimization and authority.
+</p>
+
+
+<div class="seo-process">
+
+<div class="seo-step">Research</div>
+
+<div class="seo-step">Keywords</div>
+
+<div class="seo-step">Content</div>
+
+<div class="seo-step">On-Page</div>
+
+<div class="seo-step">Off-Page</div>
+
+<div class="seo-step">Optimize</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TOOLS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-label">
+Tools & Technologies
+</div>
+
+<h2 class="section-title">
+The tools behind<br>
+my workflow.
+</h2>
+
+
+<div class="tools-grid">
+
+<div class="tool">WordPress</div>
+<div class="tool">Elementor</div>
+<div class="tool">Shopify</div>
+<div class="tool">WooCommerce</div>
+<div class="tool">SEMrush</div>
+<div class="tool">Google Search Console</div>
+<div class="tool">Google Business Profile</div>
+<div class="tool">Mailchimp</div>
+<div class="tool">Microsoft Excel</div>
+<div class="tool">SPSS</div>
+<div class="tool">R Studio</div>
+<div class="tool">HTML</div>
+<div class="tool">CSS</div>
+<div class="tool">Generative AI</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-label">
+Experience & Education
+</div>
+
+<h2 class="section-title">
+The journey so far.
+</h2>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+CURRENT
+</div>
+
+<h3>Digital Marketing Executive</h3>
+
+<p>
+Working across SEO, website development, content strategy, e-commerce and website optimization for multiple digital projects.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+MBA
+</div>
+
+<h3>MBA — Finance & International Business</h3>
+
+<p>
+Invertis University
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+EDUCATION
+</div>
+
+<h3>Bachelor of Business Administration</h3>
+
+<p>
+M.J.P. Rohilkhand University
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-date">
+INTERNSHIP
+</div>
+
+<h3>Digital Marketing Intern</h3>
+
+<p>
+Course Inbox — Inkassie Digital Education Pvt. Ltd., New Delhi
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<div class="section-label">
+Let's Connect
+</div>
+
+<h2 class="section-title">
+Have a project<br>
+in mind?
+</h2>
+
+<p class="section-description">
+Whether you need SEO, a website, e-commerce support or digital content, I'd be happy to connect.
+</p>
+
+<div class="hero-buttons" style="justify-content:center;">
+
+<a href="mailto:your-email@example.com"
+class="btn btn-primary">
+Email Me
+</a>
+
+<a href="https://www.linkedin.com/"
+target="_blank"
+class="btn btn-outline">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-content">
+
+<p>
+© 2026 Mohd Tazeem. All Rights Reserved.
+</p>
+
+<div class="socials">
+
+<a href="https://www.linkedin.com/"
+target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/mohd-tazeem01"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        document.getElementById("navLinks").classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>
